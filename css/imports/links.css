@@ -1,0 +1,38 @@
+a {
+    text-decoration: none;
+  }
+  
+  .cta-small {
+    background-color: var(--orange);
+    color: var (black);
+    padding: 4px 2px;
+    font-size: 10pt;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .cta-small:hover {
+    transition-duration: 1s;
+    background-color: var(--white);
+    color: var(--dark-green);
+    border: 2px solid var(--dark-green);
+  }
+  
+  .cta-big {
+    background-color: var(--orange);
+    color: var(--black);
+    padding: 5px 30px;
+    font-size: 12pt;
+    text-align: center;
+  }
+  
+  .cta-big:hover {
+    transition-duration: 1s;
+    background-color: var(--white);
+    color: var(--purple);
+    border: 2px solid var(--purple);
+  }
+  
+  .active {
+    text-decoration: underline;
+  }
