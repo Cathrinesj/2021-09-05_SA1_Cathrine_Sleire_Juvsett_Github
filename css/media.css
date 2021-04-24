@@ -1,0 +1,183 @@
+@media (min-width: 600px) {
+
+    /*General*/
+
+    header {
+        margin: 20px auto auto;
+        display: grid;
+        width: 600px;
+        text-align: left;
+    }
+
+    header img {
+        max-width: 200px;
+    }
+
+    header .cta-big {
+        max-width: 100px;
+        margin: 0px 10px 50px auto;
+    }
+     
+    nav, ul {
+        display: inline-flex;
+        width: 600px;
+        padding: 5px;
+        grid-column-start: -1;
+        grid-column-end: 3;
+    }  
+
+    label {
+        display: none;
+    }  
+
+    main {
+        flex:auto;
+        margin: auto;
+        margin-top: 0px;
+        display: inline-flexbox;
+        max-width: 600px;
+    }
+
+    /*Index*/
+    
+    .indexheart, .indexscientific, .indexaiboy {
+        max-width: 180px;
+        display: inline-flex;
+    } 
+    
+    .indexscience, .indexindoor {
+        max-width: 180px;
+        margin: 20px;
+        display: inline-block;
+    } 
+
+    /*Roller Sites*/
+
+    .menu {
+        display: none;
+    }
+
+    .roller, ul {
+        display: inline-flex;
+        width: 600px;
+        padding: 0px;
+        justify-content: space-evenly;
+    }   
+
+    .rollertxt, .rollerpic {
+        display: inline-flex;
+        max-width: 280px;
+    } 
+
+    .rollertxt {
+        display: block;
+    }  
+
+    .rollerpic{
+        display: block;
+        float: right;     
+    }  
+
+    .profknowallpc {
+        display: block;
+        height: 220px;
+        width: 280px;
+    }
+    
+    .profknowallphone{
+        display: none;
+    }
+}
+  
+@media (min-width: 1024px) {
+
+    /*General*/
+
+    header {
+        display: grid;
+        width: 800px;
+    }
+
+    header img {
+        max-width: 300px;
+        
+    }
+
+    nav, ul, li {
+        width: 800px;
+    }  
+
+    .footermenu {
+        width: 800px;
+    }  
+
+    .footermenu, a >*{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }  
+
+
+    /*Index*/
+
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .mainpic {
+        width: max-content;
+    }
+
+    .museumphone {
+        display: none;
+    }
+
+    .museumpc, .profshow {
+        height: 300px;
+        display: inline-flex;
+    }
+
+    .museumpc {
+        width: 500px;
+    }
+
+    .profshow {
+        width: 300px;
+    }
+
+    .mainpictxt {
+        flex: 1;
+    }
+
+    .indexheart, .indexscientific, .indexaiboy {
+        max-width: 250px;
+        margin: 5px;
+        display: inline-flex;
+    } 
+
+    .indexscience, .indexindoor {
+        max-width: 300px;
+    } 
+
+    /*Roller Sites*/
+
+    .roller, ul {
+        width: 800px;
+    } 
+
+    .rollertxt, .rollerpic {
+        display: inline-flex;
+        max-width: 380px;
+    } 
+
+    .rollertxt {
+        display: block;
+    } 
+
+    .rollerpic {
+        display: block;
+    } 
+
+    
+}    

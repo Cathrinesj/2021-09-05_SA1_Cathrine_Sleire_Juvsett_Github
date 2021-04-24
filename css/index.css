@@ -1,0 +1,56 @@
+.museumpc {
+    display: none;
+}
+
+.profshow {
+    display: none;
+}
+
+.mainpic >* {
+    font-family: 'chaloops';
+    background-color: var(--grey);
+    margin: -2px;
+} 
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.indexheart >*{
+    display: block;
+    background-color: var(--blue);
+    padding: 10px;
+}
+
+.indexscientific >*{
+    display: block;
+    background-color: var(--green);
+    padding: 10px;
+}
+
+.indexaiboy >*{
+    display: block;
+    background-color: var(--red);
+    padding: 10px;
+}
+
+.indexheart, .indexscientific, .indexaiboy {
+    margin: 5px 0px 5px 0px;
+} 
+
+.onloan {
+    margin-bottom: 20px;
+}
+
+.indexroundimgred, .indexroundimggreen {
+    border-radius: 50%;
+    border: 6px solid var(--red);
+    max-width: 300px;
+}
+
+.indexroundimggreen {
+    border: 6px solid var(--green);
+}
+
+
+
