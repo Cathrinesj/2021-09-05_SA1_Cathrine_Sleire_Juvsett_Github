@@ -3,7 +3,7 @@ a {
   }
   
   .cta-small {
-    background-color: var(--orange);
+    background-color: var(--green);
     border: 2px solid var(--black);
     padding: 4px 2px;
     font-size: 10pt;
@@ -13,9 +13,9 @@ a {
   
   .cta-small:hover {
     transition-duration: 1s;
-    background-color: var(--white);
-    color: var(--dark-green);
-    border: 2px solid var(--dark-green);
+    background-color: var(--orange);
+    color: var(--black);
+    border: 2px solid var(--black);
   }
   
   .cta-big {
@@ -29,8 +29,8 @@ a {
   
   .cta-big:hover {
     transition-duration: 1s;
-    background-color: var(--white);
-    color: var(--purple);
+    background-color: var(--green);
+    color: var(--black);
     border: 2px solid var(--black);
   }
 

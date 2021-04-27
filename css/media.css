@@ -34,18 +34,17 @@
         flex:auto;
         margin: auto;
         margin-top: 0px;
-        display: inline-flexbox;
         max-width: 600px;
     }
 
     /*Index*/
     
-    .indexheart, .indexscientific, .indexaiboy {
+    .index-heart, .index-scientific, .index-aiboy {
         max-width: 180px;
         display: inline-flex;
     } 
     
-    .indexscience, .indexindoor {
+    .index-science, .index-indoor {
         max-width: 180px;
         margin: 20px;
         display: inline-block;
@@ -64,29 +63,55 @@
         justify-content: space-evenly;
     }   
 
-    .rollertxt, .rollerpic {
-        display: inline-flex;
+    .roller-txt, .roller-pic {
         max-width: 280px;
     } 
 
-    .rollertxt {
+    .roller-txt {
         display: block;
     }  
 
-    .rollerpic{
+    .roller-pic{
         display: block;
         float: right;     
     }  
 
-    .profknowallpc {
+    .profknowall-phone {
+        display: none;
+    }
+
+    .profknowall-pc {
         display: block;
         height: 220px;
         width: 280px;
     }
-    
-    .profknowallphone{
-        display: none;
+
+    /*Pop-up*/
+
+    .funnyfact, .prof-pop {
+        max-width: 280px;
+    } 
+
+    .funnyfact {
+        display: block;
     }
+
+    .prof-pop {
+        display: block;
+        float: right;
+        height: 220px;
+        width: 280px;
+    }
+
+    /*Form Sites*/
+    
+    .form-booking label  {
+        display: block;
+    } 
+
+    .form-booking {
+        max-width: 400px;
+    }   
 }
   
 @media (min-width: 1024px) {
@@ -107,11 +132,11 @@
         width: 800px;
     }  
 
-    .footermenu {
+    .footer-menu {
         width: 800px;
     }  
 
-    .footermenu, a >*{
+    .footer-menu, a >*{
         display: inline-flex;
         align-items: center;
         justify-content: space-evenly;
@@ -125,38 +150,38 @@
         margin: auto;
     }
 
-    .mainpic {
+    .main-pic {
         width: max-content;
     }
 
-    .museumphone {
+    .museum-phone {
         display: none;
     }
 
-    .museumpc, .profshow {
+    .museum-pc, .prof-show {
         height: 300px;
         display: inline-flex;
     }
 
-    .museumpc {
+    .museum-pc {
         width: 500px;
     }
 
-    .profshow {
+    .prof-show {
         width: 300px;
     }
 
-    .mainpictxt {
+    .mainpic-txt {
         flex: 1;
     }
 
-    .indexheart, .indexscientific, .indexaiboy {
+    .index-heart, .index-scientific, .index-aiboy {
         max-width: 250px;
         margin: 5px;
         display: inline-flex;
     } 
 
-    .indexscience, .indexindoor {
+    .index-science, .index-indoor {
         max-width: 300px;
     } 
 
@@ -166,18 +191,21 @@
         width: 800px;
     } 
 
-    .rollertxt, .rollerpic {
-        display: inline-flex;
+    .roller-txt, .roller-pic {
+        max-width: 380px;
+        display: block;
+    } 
+
+    /*Pop-up*/
+
+    .profknowall-pop, .funnyfact {
         max-width: 380px;
     } 
 
-    .rollertxt {
-        display: block;
-    } 
+     /*Form Sites*/
 
-    .rollerpic {
-        display: block;
-    } 
+      .form-booking {
+        max-width: 600px;
+      }   
 
-    
 }    

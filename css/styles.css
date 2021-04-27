@@ -25,7 +25,7 @@ h1 {
 }
   
 h2 {
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
 }
 
@@ -56,7 +56,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   min-height: 100vh;
 }
   
@@ -76,7 +76,7 @@ label {
 nav, ul, li {
   display: block;
   font-family: 'chaloops', sans-serif;
-  font-size: 1rem;
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
   color: var(--black);
@@ -105,7 +105,7 @@ footer {
   text-align: center;
 }  
 
-.footermenu a {
+.footer-menu a {
   display: block;
   margin: 10px;
 }  
@@ -121,8 +121,15 @@ footer {
   display: none;
 }  
 
-.rollergreen {
+.roller-green {
+  display: block;
   background-color: var(--green);
+  margin-bottom: 10px;
+} 
+
+.roller-red {
+  display: block;
+  background-color: var(--red);
   margin-bottom: 10px;
 } 
 
@@ -139,16 +146,46 @@ footer {
   padding: 10px;
 } 
 
-.rollertxt >* {
+.roller-txt >* {
   display: block;
 }
 
-.profknowallpc, .profknowallphone {
+.profknowall-phone {
   height: 100px;
   width: 100px;
 }
 
-.profknowallpc {
+.profknowall-pc {
   display: none;
 }
 
+/*Other sites*/
+
+.menu-blue {
+  display: block;
+  background-color: var(--blue);
+  margin-bottom: 10px;
+} 
+
+.menu-red {
+  display: block;
+  background-color: var(--red);
+  margin-bottom: 10px;
+} 
+
+/*Forms*/
+
+.form-booking {
+  display: block;
+  text-align: center;
+  padding: 5px;
+}
+
+.form-booking label  {
+  margin: auto;
+} 
+
+label .radio::after {
+  content:"";
+  display: block;
+} 
