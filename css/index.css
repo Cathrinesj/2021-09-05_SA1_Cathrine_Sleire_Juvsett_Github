@@ -10,7 +10,7 @@
     font-family: 'chaloops';
     background-color: var(--grey);
     padding: 5px;
-    margin-top: -24px;
+    margin-top: -4px;
 }
 
 .index-txt {
@@ -20,24 +20,20 @@
 
 .index-box >* {
     margin: 5px;
+    display:block;
+    padding: 10px;
 }  
 
 .blue {
-    display: block;
     background-color: var(--blue);
-    padding: 10px;
 }
 
 .green {
-    display: block;
     background-color: var(--green);
-    padding: 10px;
 }
 
 .red {
-    display: block;
     background-color: var(--red);
-    padding: 10px;
 }
 
 .index-circle img{
@@ -47,7 +43,7 @@
 }
 
 .visit img {
-    border: 6px solid var(--green);
+    border-color: var(--green);
 }
 
 

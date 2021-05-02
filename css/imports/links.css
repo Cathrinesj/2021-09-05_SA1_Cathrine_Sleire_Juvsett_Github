@@ -34,5 +34,22 @@ a {
   background-color: var(--dark-orange);
   color: var(--black);
 }
-  
+
+/*Index*/
+
+.index-box p:hover {
+  text-decoration: underline;
+}  
+
+.index-circle img:hover{
+  border: 12px solid var(--red);
+  max-width: 280px;
+}
+
+.index-circle .visit img:hover{
+  border: 12px solid var(--green);
+  max-width: 280px;
+}
+
+
   
