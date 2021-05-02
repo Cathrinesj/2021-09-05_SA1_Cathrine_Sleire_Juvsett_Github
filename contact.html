@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Fill out our form to get in contact" />
+        <title>Community Science Museum | Contact Us</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/media.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/2661e0888f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <a href=index.html><img src="images/logo.jpg" alt="Community Science Museum Logo" class=logo/></a> 
+        </header>
+        <main>
+            <section class="menu-other red">
+                <h2>Contact Us</h2>
+            </section>
+            <h1>Contact Us!</h1>
+            <section>
+                <p>Want to volunteer, be a member of Young Stars Club or any other questions?</p> 
+                <p>Use our contact form below, and we will get back to you in 1-3 working days!</p>               
+            </section>
+            <form method="post">
+                <div class="form-booking">
+                    <section class="form-block">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" class="form-input">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" class="form-input">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" class="form-input">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" class="form-input">
+                    </section>    
+                    <section class="form-block">
+                        <div class="inline">
+                            <input type="radio" name="type" value="youngstars" id="youngstars"><label for="youngstars" class="radio">I want to join Young Stars Club</label> 
+                        </div>
+                        <div class="inline">
+                            <input type="radio" name="type" value="volunteer" id="volunteer"><label for="volunteer" class="radio">I want to Volunteer</label> 
+                        </div>
+                        <div class="inline">
+                            <input type="radio" name="type" value="other" id="other"><label for="other" class="radio">Other</label> 
+                        </div>
+                        <section class="form-txt">
+                            <p>How can we help you?</p> 
+                            <textarea id="message" name="message" rows="8" cols="30"></textarea>   
+                        <section class="form-block">
+                    </section>
+                </div>  
+                <a href=confirmation.html class=cta-small>Submit</a>
+            </form>    
+        </main>  
+        <footer>   
+            <section class="footer-menu">
+                <a href="index.html">Home</a>
+                <a href="visit.html">Visits</a>
+                <a href="contact.html">Contact Us</a>
+            </section>
+            <section class="some">
+                <p>Follow Us:</p>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram-square"></i>
+            </section>
+        </footer>
+    </body>
+</html>

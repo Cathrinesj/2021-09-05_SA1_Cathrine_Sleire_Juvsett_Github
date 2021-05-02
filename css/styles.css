@@ -2,17 +2,17 @@
 @import "imports/variables.css";
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "montserrat";
   src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
-  font-family: "MontserratItalic";
-  src: url("../fonts/Montserrat-MediumItalic.ttf") format("truetype");
+  font-family:"chaloops";
+  src:url("https://use.typekit.net/af/e0674b/0000000000000000773597b5/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/e0674b/0000000000000000773597b5/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/e0674b/0000000000000000773597b5/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
 }
 
 /*General*/
 
 h1,
 h2 {
-  font-family: 'chaloops', sans-serif;
+  font-family: var(--text-heading), georgia, 'Gill Sans', sans-serif;
   font-style: normal; 
   font-weight: 400;
   text-align: center;
@@ -20,13 +20,11 @@ h2 {
 
 h1 {
   font-size: 24px;
-  font-style: normal;
   padding: 2px;
 }
   
 h2 {
   font-size: 20px;
-  font-style: normal;
 }
 
 a {
@@ -42,9 +40,18 @@ html, body {
   margin: 0px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--text-paragraph), helvetica, Arial, sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
 header {
   display: inline-block;
-  margin: 20px;
+  max-width: 410px;
+  margin: auto;
   text-align: center;
 } 
 
@@ -52,22 +59,7 @@ header, img {
   margin-bottom: 20px;
 } 
 
-body {
-  display: flex;
-  flex-direction: column;
-  font-family: 'montserrat', sans-serif;
-  font-size: 16px;
-  min-height: 100vh;
-}
-  
-main {
-   flex: 1 auto;
-   max-width: 1000px;
-   margin: 20px;
-   text-align: center;
-}
-
-label {
+.fa-bars {
   float: left;
   position: relative;
   margin-left: 50px ;
@@ -75,7 +67,7 @@ label {
 
 nav, ul, li {
   display: block;
-  font-family: 'chaloops', sans-serif;
+  font-family: var(--text-heading), georgia, 'Gill Sans', sans-serif;
   font-size: 20px;
   text-align: center;
   text-decoration: none;
@@ -97,12 +89,21 @@ nav {
   float: center;
 } 
 
+main {
+  flex:auto;
+  margin: auto;
+  margin-top: 0px;
+  max-width: 320px;
+  text-align: center;
+}
+
 footer {
   background-color: var(--orange);
   display: block;
-  font-family: 'chaloops', sans-serif;
-  font-size: 1rem;
+  font-family: var(--text-heading), georgia, 'Gill Sans', sans-serif;
+  font-size: 20px;
   text-align: center;
+  margin-top: 20px;
 }  
 
 .footer-menu a {
@@ -119,18 +120,6 @@ footer {
 
 .roller {
   display: none;
-}  
-
-.roller-green {
-  display: block;
-  background-color: var(--green);
-  margin-bottom: 10px;
-} 
-
-.roller-red {
-  display: block;
-  background-color: var(--red);
-  margin-bottom: 10px;
 } 
 
 #roller-menu{
@@ -142,12 +131,32 @@ footer {
   float: center;
 }
 
-.menu {
-  padding: 10px;
-} 
-
 .roller-txt >* {
   display: block;
+}
+
+.menu-header-txt {
+  font-family: var(--text-heading), georgia, 'Gill Sans', sans-serif;
+  font-size: 20px;
+  float: none;
+  position: static;
+  margin: 0px;
+  max-width: 100%;
+} 
+
+.roller-green {
+  display: block;
+  background-color: var(--green);
+  margin-bottom: 10px;
+} 
+
+.roller-red {
+  background-color: var(--red);
+} 
+
+.roller-pic, .prof {
+  display: inline-block;
+  max-width: 320px;
 }
 
 .profknowall-phone {
@@ -161,31 +170,35 @@ footer {
 
 /*Other sites*/
 
-.menu-blue {
+.menu-other {
   display: block;
   background-color: var(--blue);
   margin-bottom: 10px;
 } 
 
-.menu-red {
-  display: block;
+.red {
   background-color: var(--red);
-  margin-bottom: 10px;
-} 
+ } 
 
 /*Forms*/
 
 .form-booking {
-  display: block;
+  display: flex;
   text-align: center;
-  padding: 5px;
+  flex-direction: column;
+  margin: 10px;
 }
 
-.form-booking label  {
-  margin: auto;
-} 
-
-label .radio::after {
-  content:"";
+.form-block >*{
   display: block;
-} 
+  flex: 1;
+  gap: 10px;
+  margin: 10px auto;
+}
+
+.inline >* {
+  display: inline;
+  flex: 1;
+  margin: 5px;
+}
+

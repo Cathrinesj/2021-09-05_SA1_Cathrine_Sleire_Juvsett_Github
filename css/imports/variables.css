@@ -1,9 +1,15 @@
 :root {
-    --black: #000000; 
-    --grey: #E4E4E4;
-    --white: #FFF; 
-    --red: #E13B05;
-    --green: #88c977;
-    --blue: #63c4e0;
-    --orange: #e6a441;
-  }
+  --text-heading: "chaloops";
+  --text-paragraph: "montserrat";
+  --text-link: "montserratItalic";
+  --black: #000000; 
+  --grey: #E4E4E4;
+  --white: #FFF; 
+  --red: #EE374D;
+  --green: #88c977;
+  --dark-green:#468836;
+  --blue: #63c4e0;
+  --orange: #e6a441;
+  --dark-orange:#c77700;
+}
+

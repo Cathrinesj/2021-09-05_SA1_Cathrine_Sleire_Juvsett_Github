@@ -13,43 +13,40 @@
     margin-top: -24px;
 }
 
-.intro {
-    margin-bottom: 20px;
+.index-txt {
+    max-width: 300px;
+    margin: auto auto 60px auto;
 }
 
-.index-heart >*{
+.index-box >* {
+    margin: 5px;
+}  
+
+.blue {
     display: block;
     background-color: var(--blue);
     padding: 10px;
 }
 
-.index-scientific >*{
+.green {
     display: block;
     background-color: var(--green);
     padding: 10px;
 }
 
-.index-aiboy >*{
+.red {
     display: block;
     background-color: var(--red);
     padding: 10px;
 }
 
-.index-heart, .index-scientific, .index-aiboy {
-    margin: 5px 0px 5px 0px;
-} 
-
-.onloan {
-    margin-bottom: 20px;
-}
-
-.index-roundimgred, .index-roundimggreen {
+.index-circle img{
     border-radius: 50%;
     border: 6px solid var(--red);
     max-width: 300px;
 }
 
-.index-roundimggreen {
+.visit img {
     border: 6px solid var(--green);
 }
 

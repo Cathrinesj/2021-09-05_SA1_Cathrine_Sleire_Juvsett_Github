@@ -3,10 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="We recommend to book a day and time with us, bot for school classes and private visits" />
+        <meta name="description" content="We recommend to book a day and time with us, both for school classes and private visits" />
         <title>Community Science Museum | Book a Day</title>
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/index.css" rel="stylesheet" />
         <link href="css/media.css" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/2661e0888f.js" crossorigin="anonymous"></script>
     </head>
@@ -15,17 +14,17 @@
             <a href=index.html><img src="images/logo.jpg" alt="Community Science Museum Logo" class=logo/></a> 
         </header>
         <main>
-            <section>
-                <h2 class="menu-red">Book a Day</h2>
+            <section class="menu-other red">
+                <h2>Book a Day</h2>
             </section>
             <h1>Booking</h1>
             <section>
                 <p>We recommend that you book a day and time with us, as there are restrictions to how many guests we can have at one time. This applies to both school visits and privat visits. Fill in the form below, open time and day slots will be available. </p> 
-                <p>If you are a school class and/or want a private tour, please check for that so that we will be prepared for you when you arrive</p>               
+                <p>If you are a school class or want a private tour, please check for that so that we will be prepared for you when you arrive</p>               
             </section>
             <form method="post">
                 <div class="form-booking">
-                    <section>
+                    <section class="form-block">
                         <label for="firstname">First Name</label>
                         <input type="text" name="firstname" id="firstname" class="form-input">
                         <label for="lastname">Last Name</label>
@@ -35,39 +34,83 @@
                         <label for="phone">Phone Number</label>
                         <input type="tel" name="phone" id="phone" class="form-input">
                     </section>    
-                    <section>
-                        <input type="number" name="adults" id="adults" class="form-input">
-                        <label for="adults">Number of adults</label>
-                        <input type="number" name="children" id="children" class="form-input">
-                        <label for="children">Number of Children</label>
-                        <select name="timeframe" id="timeframe">
-                            <option value="10.00-12.00">10.00-12.00</option>
-                            <option value="12.00-14.00">12.00-14.00</option>
-                            <option value="14.00-16.00">14.00-16.00</option>
-                        </select>
-                        <label for="timeframe">Time Frame</label>
-                    </section>      
-                    <section>  
-                        <input type="radio" name="schoolclass" value="schoolclass" id="schoolclass"><label for="shoolclass" class="radio">Schoolclass</label> 
-                        <input type="radio" name="privatetour" value="privatetour" id="privatetour"><label for="privattour" class="radio">Private Tour (Cost on NOK 70,- will be charged upon arrival</label> 
-                    <section>
-                        <p>Anything we need to know?</p> 
-                        <textarea id="message" name="message" rows="10" cols="30"></textarea>  
-                        
-                    <section>
-                        <input type="submit" value="Send Now" class="cta-small" />
-                    </section>      
-                </div>
+                    <section class="form-block">
+                        <div class="inline">
+                            <select name="adults" id="adults">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="3">4</option>
+                                <option value="3">5</option>
+                                <option value="3">6</option>
+                                <option value="3">7</option>
+                                <option value="3">8</option>
+                                <option value="3">9</option>
+                                <option value="3">10</option>
+                            </select>
+                            <label for="adults">Number of adults</label>
+                        </div>
+                        <div class="inline">
+                                <select name="children" id="children">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                            </select>
+                            <label for="children">Number of Children</label>
+                        </div>
+                        <div class="inline">
+                            <select name="timeframe" id="timeframe">
+                                <option value="10.00-12.00">10.00-12.00</option>
+                                <option value="12.00-14.00">12.00-14.00</option>
+                                <option value="14.00-16.00">14.00-16.00</option>
+                            </select>
+                            <label for="timeframe">Time Frame</label>
+                        </div>
+                        <div class="inline">
+                            <input type="radio" name="type" value="schoolclass" id="schoolclass"><label for="shoolclass" class="radio">Schoolclass</label> 
+                        </div>
+                        <div class="inline">
+                            <input type="radio" name="type" value="privatetour" id="privatetour"><label for="privattour" class="radio">Private Tour (Cost on NOK 70,- will be charged upon arrival)</label> 
+                        </div>
+                    </section>
+                </div>    
+                <section class="form-txt">
+                    <p>Anything we need to know?</p> 
+                    <textarea id="message" name="message" rows="10" cols="30"></textarea>   
+                </section>     
+                <a href=confirmation.html class=cta-small>Submit</a>
             </form>    
         </main>  
         <footer>   
             <section class="footer-menu">
                 <a href="index.html">Home</a>
-                <a href="explore.html">Explore</a>
-                <a href="biology.html">Exhibition Spaces</a>
-                <a href="events.html">Special Events and Exhibitions</a>
                 <a href="visit.html">Visits</a>
-                <a href="getinvolved.html">Get Involved</a>
+                <a href="contact.html">Contact Us</a>
             </section>
             <section class="some">
                 <p>Follow Us:</p>
