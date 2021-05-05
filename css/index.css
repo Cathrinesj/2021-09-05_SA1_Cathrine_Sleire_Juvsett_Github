@@ -7,9 +7,11 @@
 }
 
 .mainpic-txt {
-    font-family: 'chaloops';
+    font-family: var(--text-heading), georgia, 'Gill Sans', sans-serif;
+    font-size: 20px;
     background-color: var(--grey);
     padding: 5px;
+    margin: 0px;
     margin-top: -4px;
 }
 
@@ -23,6 +25,14 @@
     display:block;
     padding: 10px;
 }  
+
+.index-box h2 {
+    margin: 5px;
+} 
+
+.index-box p {
+    margin: 5px;
+} 
 
 .blue {
     background-color: var(--blue);

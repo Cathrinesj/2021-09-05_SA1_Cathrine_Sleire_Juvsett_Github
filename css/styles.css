@@ -30,6 +30,10 @@ h2 {
 a {
   color: var(--black);
 }
+
+p {
+  margin: 30px;
+}
   
 img {
   width: 100%;
@@ -50,7 +54,7 @@ body {
 
 header {
   display: inline-block;
-  max-width: 410px;
+  max-width: 320px;
   margin: auto auto 20px auto;
   text-align: center;
 } 
@@ -72,6 +76,7 @@ nav, ul, li {
   text-align: center;
   text-decoration: none;
   color: var(--black);
+  margin: 5px;
   padding: 10px;
 }
 
@@ -141,6 +146,7 @@ footer {
   float: none;
   position: static;
   margin: 0px;
+  padding: 5px;
   max-width: 100%;
 } 
 
@@ -159,13 +165,9 @@ footer {
   max-width: 320px;
 }
 
-.profknowall-phone {
+.profknowall {
   height: 100px;
   width: 100px;
-}
-
-.profknowall-pc {
-  display: none;
 }
 
 /*Other sites*/

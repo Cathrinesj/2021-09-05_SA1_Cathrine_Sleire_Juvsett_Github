@@ -81,18 +81,9 @@
 
     .roller-pic{
         display: block;
-        float: right;     
+        float: right;  
+        margin-left: 10px;   
     }  
-
-    .profknowall-phone {
-        display: none;
-    }
-
-    .profknowall-pc {
-        display: block;
-        height: 220px;
-        width: 280px;
-    }
     
     /*Other Sites*/
 
@@ -144,6 +135,7 @@
     header {
         display: grid;
         max-width: 800px;
+        margin-bottom: 0px;
     }
 
     nav, ul, li {
@@ -202,7 +194,7 @@
     } 
 
     .index-circle >* {
-        max-width: 320px;
+        max-width: 340px;
     } 
 
     /*Roller Sites*/
