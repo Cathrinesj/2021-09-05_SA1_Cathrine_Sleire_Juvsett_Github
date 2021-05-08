@@ -34,8 +34,8 @@
                         <label for="phone">Phone Number</label>
                         <input type="tel" name="phone" id="phone" class="form-input">
                     </section>    
-                    <section class="form-block">
-                        <div class="inline">
+                    <div class="form-block">
+                        <section class="inline">
                             <select name="adults" id="adults">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -49,8 +49,8 @@
                                 <option value="3">10</option>
                             </select>
                             <label for="adults">Number of adults</label>
-                        </div>
-                        <div class="inline">
+                        </section>
+                        <section class="inline">
                                 <select name="children" id="children">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -82,30 +82,32 @@
                                 <option value="28">28</option>
                             </select>
                             <label for="children">Number of Children</label>
-                        </div>
-                        <div class="inline">
+                        </section>
+                        <section class="inline">
                             <select name="timeframe" id="timeframe">
                                 <option value="10.00-12.00">10.00-12.00</option>
                                 <option value="12.00-14.00">12.00-14.00</option>
                                 <option value="14.00-16.00">14.00-16.00</option>
                             </select>
                             <label for="timeframe">Time Frame</label>
-                        </div>
-                        <div class="inline">
+                        </section>
+                        <section class="inline">
                             <input type="radio" name="type" value="schoolclass" id="schoolclass">
                             <label for="shoolclass" class="radio">Schoolclass</label> 
-                        </div>
-                        <div class="inline">
+                        </section>
+                        <section class="inline">
                             <input type="radio" name="type" value="privatetour" id="privatetour">
                             <label for="privattour" class="radio">Private Tour (Cost on NOK 70,- will be charged upon arrival)</label> 
-                        </div>
-                    </section>
+                        </section>
+                        <section class="form-txt">
+                            <p>Anything we need to know?</p> 
+                            <textarea id="message" name="message" rows="10" cols="30"></textarea>   
+                        </section>  
+                    </div>
                 </div>    
-                <section class="form-txt">
-                    <p>Anything we need to know?</p> 
-                    <textarea id="message" name="message" rows="10" cols="30"></textarea>   
-                </section>     
-                <a href=confirmation.html class=cta-small>Submit</a>
+                <section>
+                    <a href=confirmation.html class=cta-small>Submit</a>
+                </section>
             </form>    
         </main>  
         <footer>   
