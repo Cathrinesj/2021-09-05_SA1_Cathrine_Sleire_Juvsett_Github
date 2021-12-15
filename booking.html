@@ -1,126 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="We recommend to book a day and time with us, both for school classes and private visits" />
-        <title>Community Science Museum | Book a Day</title>
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/media.css" rel="stylesheet" />
-        <script src="https://kit.fontawesome.com/2661e0888f.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <a href=index.html><img src="images/Logo.png" alt="Community Science Museum Logo" class=logo/></a> 
-        </header>
-        <main>
-            <section class="menu-other red">
-                <h2>Book a Day</h2>
-            </section>
-            <h1>Booking</h1>
-            <section>
-                <p>We recommend that you book a day and time with us, as there are restrictions to how many guests we can have at one time. This applies to both school visits and privat visits. Fill in the form below, open time and day slots will be available. </p> 
-                <p>If you are a school class or want a private tour, please check for that so that we will be prepared for you when you arrive</p>               
-            </section>
-            <form method="post">
-                <div class="form-booking">
-                    <section class="form-block">
-                        <label for="firstname">First Name</label>
-                        <input type="text" name="firstname" id="firstname" class="form-input">
-                        <label for="lastname">Last Name</label>
-                        <input type="text" name="lastname" id="lastname" class="form-input">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" class="form-input">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone" class="form-input">
-                    </section>    
-                    <div class="form-block">
-                        <section class="inline">
-                            <select name="adults" id="adults">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="3">4</option>
-                                <option value="3">5</option>
-                                <option value="3">6</option>
-                                <option value="3">7</option>
-                                <option value="3">8</option>
-                                <option value="3">9</option>
-                                <option value="3">10</option>
-                            </select>
-                            <label for="adults">Number of adults</label>
-                        </section>
-                        <section class="inline">
-                                <select name="children" id="children">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                            </select>
-                            <label for="children">Number of Children</label>
-                        </section>
-                        <section class="inline">
-                            <select name="timeframe" id="timeframe">
-                                <option value="10.00-12.00">10.00-12.00</option>
-                                <option value="12.00-14.00">12.00-14.00</option>
-                                <option value="14.00-16.00">14.00-16.00</option>
-                            </select>
-                            <label for="timeframe">Time Frame</label>
-                        </section>
-                        <section class="inline">
-                            <input type="radio" name="type" value="schoolclass" id="schoolclass">
-                            <label for="shoolclass" class="radio">Schoolclass</label> 
-                        </section>
-                        <section class="inline">
-                            <input type="radio" name="type" value="privatetour" id="privatetour">
-                            <label for="privattour" class="radio">Private Tour (Cost on NOK 70,- will be charged upon arrival)</label> 
-                        </section>
-                        <section class="form-txt">
-                            <p>Anything we need to know?</p> 
-                            <textarea id="message" name="message" rows="10" cols="30"></textarea>   
-                        </section>  
-                    </div>
-                </div>    
-                <section>
-                    <a href=confirmation.html class=cta-small>Submit</a>
-                </section>
-            </form>    
-        </main>  
-        <footer>   
-            <section class="footer-menu">
-                <a href="index.html">Home</a>
-                <a href="visit.html">Visits</a>
-                <a href="contact.html">Contact Us</a>
-            </section>
-            <section class="some">
-                <p>Follow Us:</p>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram-square"></i>
-            </section>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="We recommend to book a day and time with us, both for school classes and private visits"
+    />
+    <title>Community Science Museum | Book a Day</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/2661e0888f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          src="images/Logo.png"
+          alt="Community Science Museum Logo"
+          class="logo"
+      /></a>
+      <a href="booking.html" class="cta-big"> Book a Day </a>
+      <a href="javascript:void(0);" onclick="hamburgerNav()">
+        <i class="fas fa-bars"></i>
+      </a>
+      <nav>
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="kids.html">Explore</a></li>
+          <li><a href="biology.html">Exhibitions</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="visit.html">Visits</a></li>
+          <li><a href="getinvolved.html">Get Involved</a></li>
+          <li><a class="fas fa-search" href="search.html"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="orange">Booking</h1>
+      <section>
+        <p>
+          We recommend that you book a day and time with us, as there are
+          restrictions to how many guests we can have at one time. This applies
+          to both school visits and privat visits. Fill in the form below, open
+          time and day slots will be available.
+        </p>
+        <p>
+          If you are a school class or want a private tour, please check for
+          that so that we will be prepared for you when you arrive
+        </p>
+      </section>
+      <section>
+        <form method="post">
+          <div class="message-success"></div>
+          <label for="name"
+            >Name (*required)
+            <div class="contact-error" id="name-error">*required</div>
+            <input type="text" name="name" id="name" />
+          </label>
+          <label for="email"
+            >E-mail (*required)
+            <div class="contact-error" id="email-error">*required</div>
+            <input type="email" name="email" id="email" />
+          </label>
+          <label for="phone"
+            >Phone Number (*required)
+            <div class="contact-error" id="phone-error">*required</div>
+            <input type="tel" name="phone" id="phone" />
+          </label>
+          <label for="adults"
+            >Number of adults
+            <select name="adults" id="adults">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4</option>
+              <option value="3">5</option>
+              <option value="3">6</option>
+              <option value="3">7</option>
+              <option value="3">8</option>
+              <option value="3">9</option>
+              <option value="3">10</option>
+            </select>
+          </label>
+          <label for="children"
+            >Number of Children
+            <select name="children" id="children">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+            </select>
+          </label>
+          <label for="timeframe"
+            >Time Frame
+            <select name="timeframe" id="timeframe">
+              <option value="10.00-12.00">10.00-12.00</option>
+              <option value="12.00-14.00">12.00-14.00</option>
+              <option value="14.00-16.00">14.00-16.00</option>
+            </select>
+          </label>
+          <label for="shoolclass" class="radio">
+            Schoolclass
+            <input
+              type="radio"
+              name="type"
+              value="schoolclass"
+              id="schoolclass"
+            />
+            Private Tour
+            <input
+              type="radio"
+              name="type"
+              value="privatetour"
+              id="privatetour"
+            />
+          </label>
+          <label>
+            Anything we need to know (*required)
+            <div class="contact-error" id="message-error">*required</div>
+            <textarea id="message" name="message" rows="8" cols="30"></textarea>
+          </label>
+          <button class="cta-small">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-menu">
+        <h2><a href="index.html">Home</a></h2>
+        <h2><a href="visit.html">Visits</a></h2>
+        <h2><a href="contact.html">Contact Us</a></h2>
+        <h2>Follow Us:</h2>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram-square"></i>
+      </section>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/booking.js"></script>
+  </body>
 </html>

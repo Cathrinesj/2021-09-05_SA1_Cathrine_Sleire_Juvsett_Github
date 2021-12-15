@@ -1,69 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Fill out our form to get in contact" />
-        <title>Community Science Museum | Contact Us</title>
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/media.css" rel="stylesheet" />
-        <script src="https://kit.fontawesome.com/2661e0888f.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <a href=index.html><img src="images/Logo.png" alt="Community Science Museum Logo" class=logo/></a> 
-        </header>
-        <main>
-            <section class="menu-other red">
-                <h2>Contact Us</h2>
-            </section>
-            <h1>Contact Us!</h1>
-            <section>
-                <p>Want to volunteer, be a member of Young Stars Club or any other questions?</p> 
-                <p>Use our contact form below, and we will get back to you in 1-3 working days!</p>               
-            </section>
-            <form method="post">
-                <div class="form-booking">
-                    <section class="form-block">
-                        <label for="firstname">First Name</label>
-                        <input type="text" name="firstname" id="firstname" class="form-input">
-                        <label for="lastname">Last Name</label>
-                        <input type="text" name="lastname" id="lastname" class="form-input">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" class="form-input">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone" class="form-input">
-                    </section>    
-                    <section class="form-block">
-                        <div class="inline">
-                            <input type="radio" name="type" value="youngstars" id="youngstars"><label for="youngstars" class="radio">I want to join Young Stars Club</label> 
-                        </div>
-                        <div class="inline">
-                            <input type="radio" name="type" value="volunteer" id="volunteer"><label for="volunteer" class="radio">I want to Volunteer</label> 
-                        </div>
-                        <div class="inline">
-                            <input type="radio" name="type" value="other" id="other"><label for="other" class="radio">Other</label> 
-                        </div>
-                    </section>    
-                    <section class="form-txt">
-                        <p>How can we help you?</p> 
-                        <textarea id="message" name="message" rows="8" cols="30"></textarea>   
-                    </section>      
-                </div>  
-                <a href=confirmation.html class=cta-small>Submit</a>
-            </form>    
-        </main>  
-        <footer>   
-            <section class="footer-menu">
-                <a href="index.html">Home</a>
-                <a href="visit.html">Visits</a>
-                <a href="contact.html">Contact Us</a>
-            </section>
-            <section class="some">
-                <p>Follow Us:</p>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram-square"></i>
-            </section>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fill out our form to get in contact" />
+    <title>Community Science Museum | Contact Us</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/2661e0888f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          src="images/Logo.png"
+          alt="Community Science Museum Logo"
+          class="logo"
+      /></a>
+      <a href="booking.html" class="cta-big"> Book a Day </a>
+      <a href="javascript:void(0);" onclick="hamburgerNav()">
+        <i class="fas fa-bars"></i>
+      </a>
+      <nav>
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="kids.html">Explore</a></li>
+          <li><a href="biology.html">Exhibitions</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="visit.html">Visits</a></li>
+          <li><a href="getinvolved.html">Get Involved</a></li>
+          <li><a class="fas fa-search" href="search.html"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="menu-other red">Contact Us!</h1>
+      <section>
+        <p>
+          Want to volunteer, be a member of Young Stars Club or any other
+          questions? Use our contact form below, and we will get back to you in
+          1-3 working days!
+        </p>
+      </section>
+      <section>
+        <div class="message-success"></div>
+        <form method="post">
+          <label for="name"
+            >First name (*required)
+            <div class="contact-error" id="name-error">*required</div>
+            <input type="text" name="name" id="name" />
+          </label>
+          <label for="email"
+            >E-mail (*required)
+            <div class="contact-error" id="email-error">*required</div>
+            <input type="email" name="email" id="email" />
+          </label>
+          <label for="phone"
+            >Phone Number (*required)
+            <div class="contact-error" id="phone-error">*required</div>
+            <input type="tel" name="phone" id="phone" />
+          </label>
+          <label for="contactReason" class="radio">
+            <p>Reason for contact (*required)</p>
+            Young Stars Club
+            <input
+              type="radio"
+              name="contactReason"
+              value="youngstars"
+              id="contactReason"
+              required="required"
+            />
+            Volunteer
+            <input
+              type="radio"
+              name="contactReason"
+              value="volunteer"
+              id="contactReason"
+            />
+            Other
+            <input
+              type="radio"
+              name="contactReason"
+              value="other"
+              id="contactReason"
+            />
+          </label>
+          <label>
+            How can we help you? (*required)
+            <div class="contact-error" id="message-error">*required</div>
+            <textarea id="message" name="message" rows="8" cols="30"></textarea>
+          </label>
+          <button class="cta-small">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-menu">
+        <h2><a href="index.html">Home</a></h2>
+        <h2><a href="visit.html">Visits</a></h2>
+        <h2><a href="contact.html">Contact Us</a></h2>
+        <h2>Follow Us:</h2>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram-square"></i>
+      </section>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
 </html>

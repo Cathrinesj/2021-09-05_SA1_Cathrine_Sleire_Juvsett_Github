@@ -1,66 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Explore - Learn about what we can offer for kids" />
-        <title>Community Science Museum | Explore - for Kids</title>
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/media.css" rel="stylesheet" />
-        <script src="https://kit.fontawesome.com/2661e0888f.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <a href=index.html><img src="images/Logo.png" alt="Community Science Museum Logo" class=logo/></a> 
-            <a href="booking.html" class="cta-big"> Book a Day </a>
-            <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-            <input type="checkbox" id="hamburger-menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="kids.html">Explore</a></li>
-                    <li><a href="biology.html">Exhibition Spaces</a></li>
-                    <li><a href="events.html">Special Events and Exhibitions</a></li>
-                    <li><a href="visit.html">Visits</a></li>
-                    <li><a href="getinvolved.html">Get Involved</a></li>
-                    <li><a class="fas fa-search" href="search.html"></a></li>
-                </ul>
-            </nav>  
-        </header>
-        <main>
-            <section class="roller-red">
-                <label for="roller-menu" class="menu-header-txt"><i class="fas fa-chevron-down"></i>  Explore</label>
-                <input type="checkbox" id="roller-menu">
-                <div class="roller">
-                    <ul>
-                        <li class="active"><a href="kids.html">For Kids</a></li>
-                        <li><a href="teacher.html">For Teachers</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="roller-pic prof">
-                <p>"Hi There! I am Prof. Knowall. I have hidden myself on 5 other pages on our webpages, can you find me? I have som funny facts for you if you do!"</p>
-                <img src="images/profknowall.png" class="profknowall" alt="Prof. Knowall is waiving at you. Are your ready to chaser her?"/> 
-            </section>
-            <section class="roller-txt">
-                <h1>For Kids</h1>
-                <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.</p>
-                <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore. </p>    
-                <p>We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.</p>
-                <p><a href="contact.html " class="cta-small"> Contact us </a></p>
-            </section>
-        </main>  
-        <footer>   
-            <section class="footer-menu">
-                <a href="index.html">Home</a>
-                <a href="visit.html">Visits</a>
-                <a href="contact.html">Contact Us</a>
-            </section>
-            <section class="some">
-                <p>Follow Us:</p>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram-square"></i>
-            </section>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore - Learn about what we can offer for kids"
+    />
+    <title>Community Science Museum | Explore - for Kids</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/2661e0888f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          src="images/Logo.png"
+          alt="Community Science Museum Logo"
+          class="logo"
+      /></a>
+      <a href="booking.html" class="cta-big"> Book a Day </a>
+      <a href="javascript:void(0);" onclick="hamburgerNav()">
+        <i class="fas fa-bars"></i>
+      </a>
+      <nav>
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="kids.html">Explore</a></li>
+          <li><a href="biology.html">Exhibitions</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="visit.html">Visits</a></li>
+          <li><a href="getinvolved.html">Get Involved</a></li>
+          <li><a class="fas fa-search" href="search.html"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="roller-red">
+        <a
+          href="javascript:void(0);"
+          class="menu-header-txt"
+          onclick="rollerNav()"
+        >
+          <i class="fas fa-chevron-down"></i> Explore
+        </a>
+        <div class="roller">
+          <ul>
+            <li class="active"><a href="kids.html">For Kids</a></li>
+            <li><a href="teacher.html">For Teachers</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="roller-pic prof">
+        <p>
+          "Hi There! I am Prof. Knowall. I have hidden myself on 5 other pages
+          on our webpages, can you find me? I have som funny facts for you if
+          you do!"
+        </p>
+        <img
+          src="images/profknowall.png"
+          class="profknowall"
+          alt="Prof. Knowall is waiving at you. Are your ready to chaser her?"
+        />
+      </section>
+      <section class="roller-txt">
+        <h1>For Kids</h1>
+        <p>
+          Are you a young person looking to learn more about science? Come on
+          down to our museum, there’s plenty to see and do.
+        </p>
+        <p>
+          You can learn about Newtonian physics from our bumper swing, or why
+          not travel back in time and meet our resident Woolly Mammoth? Our
+          exhibits are designed to be accessible for interested minds, so make
+          sure you come ready to learn and explore.
+        </p>
+        <p>
+          We also have the Young Stars club which meets once a week on a
+          Saturday between 10:00 and 13:00 where you’ll get to explore and
+          experiment with our team of experts.During the school holidays we run
+          special holiday clubs where you can join other children your age to go
+          on a journey of discovery. Each holiday we pick a new theme to
+          explore. To find out more about the holiday club and how you can join,
+          send us a message.
+        </p>
+        <p><a href="contact.html " class="cta-small"> Contact us </a></p>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-menu">
+        <h2><a href="index.html">Home</a></h2>
+        <h2><a href="visit.html">Visits</a></h2>
+        <h2><a href="contact.html">Contact Us</a></h2>
+        <h2>Follow Us:</h2>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram-square"></i>
+      </section>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>

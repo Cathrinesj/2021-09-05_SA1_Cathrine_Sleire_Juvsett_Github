@@ -11,27 +11,25 @@
     </head>
     <body>
         <header>
-            <a href=index.html><img src="images/Logo.png" alt="Community Science Museum Logo" class=logo/></a> 
+            <a href="index.html"><img src="images/Logo.png" alt="Community Science Museum Logo" class="logo"/></a>
             <a href="booking.html" class="cta-big"> Book a Day </a>
-            <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-            <input type="checkbox" id="hamburger-menu">
+            <a href="javascript:void(0);" onclick="hamburgerNav()">
+              <i class="fas fa-bars"></i>
+            </a>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="kids.html">Explore</a></li>
-                    <li><a href="biology.html">Exhibition Spaces</a></li>
-                    <li><a href="events.html">Special Events and Exhibitions</a></li>
-                    <li class="active"><a href="visit.html">Visits</a></li>
-                    <li><a href="getinvolved.html">Get Involved</a></li>
-                    <li><a class="fas fa-search" href="search.html"></a></li>
-                </ul>
-            </nav>  
+              <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="kids.html">Explore</a></li>
+                <li><a href="biology.html">Exhibitions</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="visit.html">Visits</a></li>
+                <li><a href="getinvolved.html">Get Involved</a></li>
+                <li><a class="fas fa-search" href="search.html"></a></li>
+              </ul>
+            </nav>
         </header>
         <main>
-            <section class="menu-other">
-                <h2>Visits</h2>
-            </section>
-            <h1>Plan your visit</h1>
+            <h1 class="blue">Plan your visit</h1>
             <section>
                 <h2>Location</h2>
                 <p>The museum is locaed at <a href="https://www.google.com/maps/place/VilVite+-+Bergen+Science+Center/@60.3813371,5.3270117,17z/data=!3m1!4b1!4m5!3m4!1s0x463cf9533f58e79b:0x36ba417d02e82232!8m2!3d60.3812477!4d5.3295115" class="cursiv">Bergensveien 101, 5020 Bergen</a></p>
@@ -56,15 +54,14 @@
         </main>  
         <footer>   
             <section class="footer-menu">
-                <a href="index.html">Home</a>
-                <a href="visit.html">Visits</a>
-                <a href="contact.html">Contact Us</a>
-            </section>
-            <section class="some">
-                <p>Follow Us:</p>
+                <h2><a href="index.html">Home</a></h2>
+                <h2><a href="visit.html">Visits</a></h2>
+                <h2><a href="contact.html">Contact Us</a></h2>
+                <h2>Follow Us:</h2>
                 <i class="fab fa-facebook"></i>
                 <i class="fab fa-instagram-square"></i>
             </section>
         </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>

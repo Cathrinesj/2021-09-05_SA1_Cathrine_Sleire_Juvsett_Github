@@ -2,29 +2,29 @@
 @import "imports/variables.css";
 
 @font-face {
-  font-family: "montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
-  font-family:"chaloops";
-  src:url("https://use.typekit.net/af/e0674b/0000000000000000773597b5/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/e0674b/0000000000000000773597b5/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/e0674b/0000000000000000773597b5/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-family: "PaytoneOne-Regular";
+  src: url("../fonts/PaytoneOne-Regular.ttf") format("truetype");
+  font-family: "PTSans-Regular";
+  src: url("../fonts/PTSans-Regular.ttf") format("truetype");
+  font-family: "PTSans-Italic";
+  src: url("../fonts/PTSans-Italic.ttf") format("truetype");
 }
 
 /*General*/
 
 h1,
 h2 {
-  font-family: var(--text-heading), georgia, 'Gill Sans', sans-serif;
-  font-style: normal; 
-  font-weight: 400;
-  text-align: center;
-} 
+  font-family: var(--text-heading), georgia, "Gill Sans", sans-serif;
+}
 
 h1 {
   font-size: 24px;
-  padding: 2px;
+  margin: 10px auto;
 }
-  
+
 h2 {
   font-size: 20px;
+  margin: 5px;
 }
 
 a {
@@ -32,135 +32,120 @@ a {
 }
 
 p {
-  margin: 30px;
+  font-family: var(--text-paragraph), Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: left;
 }
-  
+
+.blue {
+  background-color: var(--blue);
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
 img {
   width: 100%;
 }
-  
-html, body {
+
+html,
+body {
   height: 100%;
-  margin: 0px;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  font-family: var(--text-paragraph), helvetica, Arial, sans-serif;
-  font-size: 16px;
   min-height: 100vh;
 }
 
-header {
-  display: inline-block;
-  max-width: 320px;
-  margin: auto auto 20px auto;
-  text-align: center;
-} 
-
-header img{
-  margin-bottom: 10px;
-} 
-
-.fa-bars {
-  float: left;
-  position: relative;
-  margin-left: 50px ;
-}
-
-nav, ul, li {
-  display: block;
-  font-family: var(--text-heading), georgia, 'Gill Sans', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-  color: var(--black);
-  margin: 5px;
-  padding: 10px;
-}
-
-nav {
-  display: none;
-}
-  
-  
-#hamburger-menu{
-  display: none;
-}
-  
-#hamburger-menu:checked ~ nav {
-  display: block;
-  float: center;
-} 
-
 main {
-  flex:auto;
+  flex: auto;
   margin: auto;
   margin-top: 0px;
   max-width: 320px;
   text-align: center;
 }
 
+/*Header*/
+
+header {
+  display: inline-block;
+  max-width: 320px;
+  margin: 20px auto;
+}
+
+header img {
+  margin-bottom: 10px;
+}
+
+.fa-bars {
+  float: left;
+  position: relative;
+  margin: auto 50px;
+}
+
+nav,
+ul,
+li {
+  display: block;
+  font-family: var(--text-heading), georgia, "Gill Sans", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--black);
+  justify-content: space-evenly;
+  padding: 5px;
+  margin: 5px;
+}
+
+nav {
+  display: none;
+}
+
+/*Footer*/
+
 footer {
   background-color: var(--orange);
   display: block;
-  font-family: var(--text-heading), georgia, 'Gill Sans', sans-serif;
+  font-family: var(--text-heading), georgia, "Gill Sans", sans-serif;
   font-size: 20px;
   text-align: center;
   margin-top: 20px;
-}  
-
-.footer-menu a {
-  display: block;
-  margin: 10px;
-}  
+}
 
 .fab {
   margin: 0px 10px 20px 10px;
   font-size: 2rem;
-}  
+}
 
 /*Roller sites*/
 
 .roller {
   display: none;
-} 
-
-#roller-menu{
-  display: none;
-}
-  
-#roller-menu:checked ~ .roller {
-  display: block;
-  float: center;
-}
-
-.roller-txt >* {
-  display: block;
 }
 
 .menu-header-txt {
-  font-family: var(--text-heading), georgia, 'Gill Sans', sans-serif;
+  font-family: var(--text-heading), georgia, "Gill Sans", sans-serif;
   font-size: 20px;
   float: none;
   position: static;
   margin: 0px;
   padding: 5px;
   max-width: 100%;
-} 
+}
 
 .roller-green {
-  display: block;
   background-color: var(--green);
-  margin-bottom: 10px;
-} 
+}
 
 .roller-red {
   background-color: var(--red);
-} 
+}
 
-.roller-pic, .prof {
+.roller-pic,
+.prof {
   display: inline-block;
   max-width: 320px;
 }
@@ -170,36 +155,31 @@ footer {
   width: 100px;
 }
 
-/*Other sites*/
-
-.menu-other {
-  display: block;
-  background-color: var(--blue);
-  margin-bottom: 10px;
-} 
-
-.red {
-  background-color: var(--red);
- } 
-
 /*Forms*/
 
-.form-booking {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  margin: 10px;
-}
-
-.form-block >*{
+form {
   display: block;
-  flex: 1;
-  gap: 10px;
-  margin: 10px auto;
+  max-width: 320px;
+  margin: 10px;
+  align-content: center;
+  font-family: var(--text-paragraph), Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
-.inline >* {
-  display: inline;
-  flex: 1;
-  margin: 5px;
+input,
+textarea {
+  border-style: groove;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-error {
+  display: none;
+  color: red;
+}
+
+.message-success {
+  background-color: var(--orange);
+  font-family: var(--text-paragraph), Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }

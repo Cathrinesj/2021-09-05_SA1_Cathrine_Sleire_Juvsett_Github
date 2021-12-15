@@ -1,60 +1,51 @@
-.museum-pc {
-    display: none;
-}
-
+.museum-pc,
 .prof-show {
-    display: none;
+  display: none;
 }
 
 .mainpic-txt {
-    font-family: var(--text-heading), georgia, 'Gill Sans', sans-serif;
-    font-size: 20px;
-    background-color: var(--grey);
-    padding: 5px;
-    margin: 0px;
-    margin-top: -4px;
+  background-color: var(--grey);
+  padding: 5px;
+  margin: 0px;
+  margin-top: -4px;
 }
 
-.index-txt {
-    max-width: 300px;
-    margin: auto auto 60px auto;
+.index-txt,
+.index-box,
+.index-circle {
+  max-width: 300px;
+  margin: auto auto 60px auto;
 }
 
-.index-box >* {
-    margin: 5px;
-    display:block;
-    padding: 10px;
-}  
+.index-box > * {
+  margin: 5px;
+  display: block;
+  padding: 10px;
+}
 
-.index-box h2 {
-    margin: 5px;
-} 
-
+.index-box h2,
 .index-box p {
-    margin: 5px;
-} 
+  margin: 5px;
+}
 
 .blue {
-    background-color: var(--blue);
+  background-color: var(--blue);
 }
 
 .green {
-    background-color: var(--green);
+  background-color: var(--green);
 }
 
 .red {
-    background-color: var(--red);
+  background-color: var(--red);
 }
 
-.index-circle img{
-    border-radius: 50%;
-    border: 6px solid var(--red);
-    max-width: 300px;
+.index-circle img {
+  border-radius: 50%;
+  border: 6px solid var(--red);
+  max-width: 300px;
 }
 
 .visit img {
-    border-color: var(--green);
+  border-color: var(--green);
 }
-
-
-

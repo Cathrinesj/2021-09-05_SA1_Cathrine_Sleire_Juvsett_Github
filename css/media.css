@@ -1,217 +1,143 @@
 @media (min-width: 600px) {
+  /*General*/
 
-    /*General*/
+  header,
+  main {
+    max-width: 600px;
+  }
 
-    header {
-        margin: 20px auto 20px;
-        display: grid;
-        max-width: 600px;
-        text-align: left;
-    }
+  header {
+    margin: auto;
+    display: grid;
+    text-align: left;
+  }
 
-    header img {
-        max-width: 300px;
-    }
+  header img {
+    max-width: 300px;
+  }
 
-    header .cta-big {
-        max-width: 100px;
-        margin: 0px 10px 50px auto;
-    }
-     
-    nav, ul {
-        display: inline-flex;
-        width: 600px;
-        padding: 5px;
-        grid-column-start: -1;
-        grid-column-end: 3;
-    }  
+  header .cta-big {
+    max-width: 100px;
+    margin: 0px 10px 50px auto;
+  }
 
-    label .fa-bars {
-        display: none;
-    }  
+  nav,
+  ul {
+    display: inline-flex;
+    grid-column-start: -1;
+    grid-column-end: 3;
+  }
 
-    main {
-        max-width: 580px;
-    }
+  .fa-bars {
+    display: none;
+  }
 
-    /*Index*/
+  footer * {
+    display: inline-flex;
+  }
 
-    .index-txt{
-        max-width: 600px;
-    }
-    
-    .index-box {
-        max-width: 600px;
-        display: flex;
-    } 
+  /*Index*/
 
-    .index-box >*{
-        flex: 1;
-        margin: 5px;
-    }
-    
-    .index-circle >*{
-        max-width: 200px;
-        margin: 20px;
-        display: inline-block;
-    } 
+  .index-txt,
+  .index-box,
+  .index-circle {
+    max-width: 600px;
+  }
 
-    /*Roller Sites*/
+  .index-box {
+    display: flex;
+  }
 
-    .menu-header-txt {
-        display: none;
-    }  
+  .index-box > * {
+    flex: 1;
+  }
 
-    .roller, ul >*{
-        display: inline-flex;
-        width: 600px;
-        height: 100px;
-        margin: 0px;
-        padding: 0px;
-        justify-content: space-evenly;
-    }   
+  .index-circle > * {
+    max-width: 200px;
+    margin: 20px;
+    display: inline-block;
+  }
 
-    .roller-txt, .roller-pic {
-        max-width: 280px;
-    } 
+  /*Roller Sites*/
 
-    .roller-txt {
-        display: block;
-    }  
+  .menu-header-txt {
+    display: none;
+  }
 
-    .roller-pic{
-        display: block;
-        float: right;  
-        margin-left: 10px;   
-    }  
-    
-    /*Other Sites*/
+  .roller {
+    display: inline-flex;
+    justify-content: space-evenly;
+  }
 
-    .menu-other {
-        height: 100px;
-    } 
+  .roller-txt,
+  .roller-pic {
+    max-width: 280px;
+    display: block;
+  }
 
-    .menu-other h2 {
-        padding: 30px;
-    } 
+  .roller-pic {
+    float: right;
+    margin-left: 10px;
+  }
 
-    /*Pop-up*/
+  /*Other Sites*/
 
-    .funnyfact, .prof-pop {
-        max-width: 280px;
-    } 
+  .menu-other h2 {
+    padding: 30px;
+  }
 
-    .funnyfact {
-        display: block;
-    }
+  /*Pop-up*/
 
-    .prof-pop {
-        display: block;
-        float: right;
-        height: 220px;
-        width: 280px;
-    }
-
-    /*Forms*/
-
-    .form-booking {
-        flex-direction: row;
-    }
-
-    .form-block {
-        flex: 1;
-    }
-
-    .form-booking .inline {
-        text-align: left;
-    }
-
+  .funnyfact,
+  .prof-pop {
+    max-width: 280px;
+    display: block;
+  }
 }
-  
+
 @media (min-width: 1024px) {
+  /*General*/
+  header,
+  main {
+    max-width: 900px;
+  }
 
-    /*General*/
+  /*Index*/
 
-    header {
-        display: grid;
-        max-width: 800px;
-        margin-bottom: 0px;
-    }
+  .museum-phone {
+    display: none;
+  }
 
-    nav, ul, li {
-        width: 800px;
-    }  
+  .museum-pc,
+  .prof-show {
+    height: 300px;
+    display: inline-flex;
+  }
 
-    .footer-menu {
-        width: 800px;
-    }  
+  .museum-pc {
+    width: 500px;
+  }
 
-    .footer-menu, a >*{
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }  
+  .prof-show {
+    width: 300px;
+  }
 
+  .mainpic-txt {
+    flex: 1;
+  }
 
-    /*Index*/
+  /*Roller Sites*/
 
-    main {
-        max-width: 800px;
-        margin: auto;
-    }
+  .roller-txt,
+  .roller-pic {
+    max-width: 380px;
+    display: block;
+  }
 
-    .main-pic {
-        width: max-content;
-    }
+  /*Pop-up*/
 
-    .museum-phone {
-        display: none;
-    }
-
-    .museum-pc, .prof-show {
-        height: 300px;
-        display: inline-flex;
-    }
-
-    .museum-pc {
-        width: 500px;
-    }
-
-    .prof-show {
-        width: 300px;
-    }
-
-    .mainpic-txt {
-        flex: 1;
-    }
-
-    .index-txt {
-        max-width: 800px;
-    }
-
-    .index-box {
-        max-width: 800px;
-    } 
-
-    .index-circle >* {
-        max-width: 340px;
-    } 
-
-    /*Roller Sites*/
-
-    .roller, ul {
-        width: 800px;
-    } 
-
-    .roller-txt, .roller-pic {
-        max-width: 380px;
-        display: block;
-    } 
-
-    /*Pop-up*/
-
-    .profknowall-pop, .funnyfact {
-        max-width: 380px;
-    } 
-
-}    
+  .profknowall-pop,
+  .funnyfact {
+    max-width: 380px;
+  }
+}
