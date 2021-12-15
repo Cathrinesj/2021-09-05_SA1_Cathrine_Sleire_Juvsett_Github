@@ -6,15 +6,7 @@
 .mainpic-txt {
   background-color: var(--grey);
   padding: 5px;
-  margin: 0px;
   margin-top: -4px;
-}
-
-.index-txt,
-.index-box,
-.index-circle {
-  max-width: 300px;
-  margin: auto auto 60px auto;
 }
 
 .index-box > * {
@@ -23,27 +15,14 @@
   padding: 10px;
 }
 
-.index-box h2,
 .index-box p {
-  margin: 5px;
-}
-
-.blue {
-  background-color: var(--blue);
-}
-
-.green {
-  background-color: var(--green);
-}
-
-.red {
-  background-color: var(--red);
+  margin-top: 10px;
 }
 
 .index-circle img {
   border-radius: 50%;
   border: 6px solid var(--red);
-  max-width: 300px;
+  max-width: 260px;
 }
 
 .visit img {

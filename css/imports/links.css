@@ -44,7 +44,7 @@ a {
 
 .index-circle img:hover {
   border: 12px solid var(--red);
-  max-width: 280px;
+  max-width: 248px;
 }
 
 .index-circle .visit img:hover {

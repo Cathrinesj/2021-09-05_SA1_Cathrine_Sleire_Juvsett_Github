@@ -45,6 +45,14 @@ p {
   background-color: var(--orange);
 }
 
+.green {
+  background-color: var(--green);
+}
+
+.red {
+  background-color: var(--red);
+}
+
 img {
   width: 100%;
 }
@@ -68,6 +76,10 @@ main {
   text-align: center;
 }
 
+section {
+  margin-top: 2rem;
+}
+
 /*Header*/
 
 header {
@@ -77,7 +89,7 @@ header {
 }
 
 header img {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .fa-bars {
@@ -113,6 +125,7 @@ footer {
   font-size: 20px;
   text-align: center;
   margin-top: 20px;
+  padding-top: 20px;
 }
 
 .fab {
@@ -136,14 +149,6 @@ footer {
   max-width: 100%;
 }
 
-.roller-green {
-  background-color: var(--green);
-}
-
-.roller-red {
-  background-color: var(--red);
-}
-
 .roller-pic,
 .prof {
   display: inline-block;
@@ -157,13 +162,22 @@ footer {
 
 /*Forms*/
 
-form {
-  display: block;
+section form {
   max-width: 320px;
+}
+
+form {
+  display: inline-block;
+  width: auto;
   margin: 10px;
   align-content: center;
   font-family: var(--text-paragraph), Arial, Helvetica, sans-serif;
   font-size: 18px;
+}
+
+form div label {
+  display: inline-block;
+  margin: 10px;
 }
 
 input,
